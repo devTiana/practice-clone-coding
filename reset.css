@@ -104,8 +104,19 @@ nav,
 section {
   display: block;
 }
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
 body {
   line-height: 1;
+}
+
+a {
+  color: #282a35;
+  text-decoration: none;
+  outline: none;
+  display: block;
 }
 ol,
 ul {
@@ -125,4 +136,8 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+button {
+  border: none;
+  box-shadow: none;
 }
