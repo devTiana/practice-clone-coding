@@ -1,25 +1,48 @@
 /* global */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   text-align: center;
-  color: #fff;
+  color: #111;
 }
 a, button, input {
+  margin: 0;
+  padding: 0;
   color: #fff;
   background-color: rgba(255, 255, 255, 0);
 }
 h1 {
-  margin-bottom: 14px;
+  padding-bottom: 12px;
   font-size: 48px;
   font-weight: 100;
 }
 .contents_font {
   font-size: 20px;
   font-weight: 300;
+  line-height: 24px;
+}
+.contents_font_bold {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.contents_font_small {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
 }
 .large_font {
   font-size: 24px;
+}
+.font_white {
+  color: #fff;
 }
 
 /** intro **/
@@ -110,6 +133,40 @@ ul#nav > li {
   border-left: 1px solid #e1e1e1;
 }
 .amount > li > div > * {
-  color: #111;
   line-height: 28.5px;
+}
+
+/** about **/
+.about {
+  width: 100%;
+  height: 601px;
+  margin-top: -132px;
+  background: #f1f2f3;
+}
+.about > h1 {
+  padding-top: 116px;
+}
+
+/* icons */
+ul.icons {
+  width: 1280px;
+  height: 302px;
+  margin: 50px auto 0px;
+  display: flex;
+  justify-content: space-between;
+}
+ul.icons > li {
+  width: 413px;
+  padding-top: 36px;
+  background: #fff;
+}
+ul.icons > li button {
+  width: 100px;
+  height: 30px;
+  margin-top: 25px;
+  background-color: #2f7af4;
+  cursor: pointer;
+}
+ul.icons > li button:active {
+  background-color: #2868ce;
 }
