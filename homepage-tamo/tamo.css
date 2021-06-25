@@ -17,7 +17,7 @@ a, button, input {
   color: #fff;
   background-color: rgba(255, 255, 255, 0);
 }
-h1 {
+.title {
   padding-bottom: 12px;
   font-size: 48px;
   font-weight: 100;
@@ -52,7 +52,7 @@ h1 {
   height: 718px;
 }
 
-/* header */
+/** header **/
 header#header {
   width: 1280px;
   height: 86px;
@@ -61,6 +61,7 @@ header#header {
   align-items: center;
 }
 
+/* search_area */
 .search_area {
   width: 300px;
   height: 40px;
@@ -86,6 +87,7 @@ header#header {
   cursor: pointer;
 }
 
+/* nav */
 ul#nav {
   width: calc(1280px - 300px);
   display: flex;
@@ -137,13 +139,13 @@ ul#nav > li {
 }
 
 /** about **/
-.about {
+section#about {
   width: 100%;
   height: 601px;
   margin-top: -132px;
   background: #f1f2f3;
 }
-.about > h1 {
+#about > h1 {
   padding-top: 116px;
 }
 
@@ -172,13 +174,15 @@ ul.icons > li button:active {
 }
 
 /** service **/
-.service {
+section#service {
   width: 100%;
   height: 659px;
 }
-.service > h1 {
+#service > h1 {
   padding-top: 50px;
 }
+
+/* service_contents */
 .service_contents {
   width: 1280px;
   height: 427px;
@@ -190,7 +194,59 @@ ul.icons > li button:active {
   padding-left: 20px;
   text-align: left;
 }
+.service_textbox h2 {
+  font-weight: 400;
+}
 .service_textbox p {
   font-size: 18px;
+  font-weight: 300;
   line-height: 24px;
+}
+
+/** contact **/
+section#contact {
+  width: 100%;
+  height: 418px;
+  background: url("img-tamo/contact.png") no-repeat;
+}
+
+/* service_contents */
+ul.contact_contents {
+  padding-top: 138px;
+  display: flex;
+}
+ul.contact_contents li {
+  color: #fff;
+  flex: 1 0 0;
+}
+
+ul.contact_contents .contents_font {
+  padding-bottom: 20px;
+}
+ul.contact_contents button.learn_more {
+  width: 220px;
+  height: 40px;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 38px;
+  border: 1px solid #fff;
+}
+
+/** footer **/
+footer#footer {
+  width: 100%;
+  height: 244px;
+  background: #1F1F1F;
+  display: flex;
+  align-items: center;
+}
+#footer .logo {
+  text-align: right;
+  flex: 3 0 0;
+}
+#footer .company_info {
+  line-height: 40px;
+  text-align: left;
+  flex: 9 0 0;
 }
